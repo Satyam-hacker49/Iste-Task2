@@ -1,0 +1,342 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #ffffff 0%, #f7eb7e 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.nav_bar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 200px;
+}
+
+.nav_links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: #ffffff;
+  list-style: none;
+  border-radius: 20px;
+  padding: 10px 14px;
+}
+
+.nav_links li a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px 0px;
+  font-size: 14px;
+   display: inline-block;
+ 
+}
+.nav_links li a:hover {
+  color: #555;
+  transform:scale(1.3);
+  transition:0.3s;  
+}
+
+.setting {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+
+.heading {
+  font-size: 14px;
+  color: #000000;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.icon:hover {
+  background-color: #ddd;
+}
+
+.button {
+  background-color: #ffffff;
+  border: none;
+}
+
+.body_heading {
+  font-weight: 100;
+  font-size: 35px;
+}
+
+.main_heading {
+  font-size: 35px;
+  color: #000000;
+  font-weight: 25px;
+  text-align: start;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.button_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 35%;
+  background-color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 25px;
+}
+
+.annual_button,
+.monthly_button {
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.annual_button {
+  background-color: black;
+  color: white;
+}
+.annual_button:hover,
+.monthly_button:hover {
+  background-color: black;
+  color: white;
+}
+
+.monthly_button {
+  background-color: transparent;
+  color: black;
+}
+
+.pricing_container {
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  font-weight: 100;
+  margin-left: 50px;
+}
+
+.card,
+.card_3 {
+  position: relative;
+  background: transparent;
+  flex-basis: 33%;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  transition: 0.3s ease;
+  border: 1px solid #ccc;
+}
+.card_3 {
+  background: rgb(247, 244, 215);
+}
+.card:hover,
+.card_3:hover {
+  transform: translateY(-5px);
+}
+
+.ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0px 14px;
+  color: black;
+  border-bottom-left-radius: 12px;
+  border-top-right-radius: 20px;
+  border: none;
+  z-index: 999;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.ribbon.active {
+  background-color: transparent;
+  font-size: 12px;
+}
+
+.ribbon.discount {
+  background-color: gold;
+  color: black;
+}
+
+.ribbon.popular {
+  background-color: transparent;
+  color: black;
+}
+
+.price {
+  font-size: 35px;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 16px;
+  background: white;
+  color: black;
+  text-align: center;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn:hover {
+  background: black;
+  color: white;
+}
+
+.card_name {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.price_show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card_button_1,
+.card_button_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.yearly_bill {
+  font-size: 14px;
+}
+
+.cost {
+  font-size: 40px;
+}
+
+.card_description,
+.card_description_2 {
+  font-size: 10px;
+  text-align: center;
+  color: rgb(135, 130, 130);
+  margin-top: 10px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.dotted_line {
+  border: none;
+  border-top: 2px dotted #aaa2a2;
+  margin: 20px 0;
+}
+
+.fa-check {
+  background-color: green;
+  color: black;
+  padding: 4px;
+  border-radius: 50%;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.fa-xmark {
+  color: rgb(157, 154, 154);
+  font-size: 14px;
+}
+
+.list_item_1,
+.list_item_pro_1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #000000;
+  padding-bottom: 2px;
+}
+
+.list_item_2,
+.list_item_pro_2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: rgb(157, 154, 154);
+  padding-left: 5px;
+  padding-bottom: 7px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.yellow {
+  background-color: rgb(217, 217, 13);
+}
+
+.black {
+  background-color: black;
+}
+
+.green {
+  background-color: green;
+}
+
+.previous_amount {
+  color: rgb(157, 154, 154);
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+.card .list_item_pro_1 {
+  color: white;
+}
+
+
